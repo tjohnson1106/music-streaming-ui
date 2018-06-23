@@ -1,5 +1,7 @@
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+v;
 import Slider from "react-native-slider";
-import { Z_STREAM_ERROR } from "zlib";
 
 function pad(n, width, z = 0) {
   n = n + "";
