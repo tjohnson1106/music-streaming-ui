@@ -1,14 +1,25 @@
 import React from "react";
-import { View, Image, Text, TouchableOpacity } from "react-native";
+import {
+  View,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet
+} from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
-const Header = ({ onDownPress, onQueuePress, onMessagePress }) => (
+const Header = ({
+  onDownPress,
+  onQueuePress,
+  onMessagePress,
+  message
+}) => (
   <View style={styles.root}>
     <TouchableOpacity onPress={onDownPress}>
-      <MateriaIcons
+      <MaterialIcons
         name="keyboard-arrow-down"
         size={32}
-        color="#e6a340"
+        color="white"
         style={{ opacity: 0.72 }}
       />
     </TouchableOpacity>
@@ -16,10 +27,10 @@ const Header = ({ onDownPress, onQueuePress, onMessagePress }) => (
       {message.toUpperCase()}
     </Text>
     <TouchableOpacity onPress={onQueuePress}>
-      <MateriaIcons
+      <MaterialIcons
         name="queue-music"
         size={32}
-        color="#e6a340"
+        color="white"
         style={{ opacity: 0.72 }}
       />
     </TouchableOpacity>

@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
-v;
 import Slider from "react-native-slider";
 
 function pad(n, width, z = 0) {

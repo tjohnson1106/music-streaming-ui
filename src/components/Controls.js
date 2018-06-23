@@ -5,7 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity
 } from "react-native";
-import { MaterialIcons } from "@expo/react-native-vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 const Controls = ({
   paused,

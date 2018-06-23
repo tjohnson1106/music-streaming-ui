@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   Dimensions
 } from "react-native";
-import { MaterialIcons } from "@expo/react-native-vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 const TrackDetails = ({
   title,
@@ -20,7 +20,7 @@ const TrackDetails = ({
 }) => (
   <View style={styles.root}>
     <TouchableOpacity onPress={onAddPress} style={{ opacity: 0.72 }}>
-      <MaterialIcons name="add-circle-outline" />
+      <MaterialIcons name="add-circle-outline" size={32} />
     </TouchableOpacity>
     <View style={styles.detailsWrapper}>
       <Text style={styles.title} onPress={onTitlePress}>
@@ -38,6 +38,7 @@ const TrackDetails = ({
             height: 17,
             width: 17
           }}
+          size={17}
         />
       </View>
     </TouchableOpacity>
