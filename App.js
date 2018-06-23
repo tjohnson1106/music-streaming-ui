@@ -3,6 +3,8 @@ import { StyleSheet, View } from "react-native";
 
 import { Header } from "./src/components/Header";
 
+//started seek bar 06222018
+
 export default class App extends React.Component {
   render() {
     return (
